@@ -20,24 +20,25 @@
       <div class="col-sm-6 col-xs-12 camdiv">
         <label>Webcam View</label>
         <div id="webcam"></div>
-        <button id="identify" class="btn btn-success">Capture</button>
+        <button id="identify" class="btn btn-success" onclick="captureImage()">Capture</button>
       </div>
       <div class="col-sm-6 col-xs-12 camdiv">
         <label>Snapshot</label>
         <div id="snapshot"></div>
-        <button id="identify" class="btn btn-primary">Identify</button>
-      </div>
-      <div class="result col-xs-12">
-        <h4>
-          <img src="https://media.giphy.com/media/llIaBSC7OWuZv8H05l/giphy.gif" style="width:100px;">
-          <span id="resultValue"></span>
-        </h4>
+        <button id="identify" class="btn btn-primary" onclick="check()">Identify</button>
       </div>
     </center>
+    <div class="result col-xs-12">
+      <h4 class="col-xs-12 col-sm-6">
+        <img src="https://media.giphy.com/media/llIaBSC7OWuZv8H05l/giphy.gif" style="width:100px;">
+        <span id="resultValue"></span>
+      </h4>
+    </div>
       <div class="footer">
         <p>Made By Pranav Tantri</p>
       </div>
   </body>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js" integrity="sha512-dQIiHSl2hr3NWKKLycPndtpbh5iaHLo6MwrXm7F0FM5e+kL2U16oE9uIwPHUl6fQBeCthiEuV/rzP3MiAB8Vfw==" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
   <script src="main.js"></script>  
   </html>
